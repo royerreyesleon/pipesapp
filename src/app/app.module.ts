@@ -8,9 +8,11 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { VentasModule } from './ventas/ventas.module';
 
-import localEs from '@angular/common/locales/es-MX';
+import localeEs from '@angular/common/locales/es-MX';
+import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from "@angular/common";
-registerLocaleData(localEs);
+registerLocaleData(localeEs);
+registerLocaleData(localeFr);
 
 @NgModule({
     declarations: [
