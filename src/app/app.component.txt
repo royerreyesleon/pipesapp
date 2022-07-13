@@ -1,0 +1,22 @@
+<div class="text-layout">
+    <h1>{{ nombre | lowercase}}</h1>
+    <h1>{{ nombre | uppercase}}</h1>
+    <h1>{{ nombre | titlecase}}</h1>
+</div>
+
+<button pButton type="button" label="Click" (click)="cambiar()">
+<i class="pi pi-check"></i> 
+</button>
+
+<br>
+<br>
+
+<p-button label="Submit" icon="pi pi-check" iconPos="right" (click)="cambiar()"></p-button>
+
+<br>
+<br>
+
+<p-card [header]="nombre | titlecase"
+        subheader="esto es un subheader">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex obcaecati corporis itaque repellat nostrum sequi maiores dolor dicta facilis. Quis nobis dolor maxime, quia beatae harum quos qui officia molestias.
+</p-card>
